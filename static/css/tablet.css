@@ -1,0 +1,25 @@
+@media screen and (min-width: 480px) and (max-width:1024px){
+    .box{
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        background: transparent;
+        border-radius: 0;
+    }
+
+    /* header{
+        width: 10%;
+    } */
+
+    .center{
+        width: 90%;
+    }
+
+    /* .group{
+        width: 80vw;
+    } */
+
+    .right-bar{
+        display: none;
+    }
+}

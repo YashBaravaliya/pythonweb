@@ -1,0 +1,153 @@
+.robot{
+    height: 22vh;
+    width: 12vw;
+    position: relative;
+    border-radius: 50%;
+    animation: fly 3s linear infinite;
+    /* background: #000; */
+}
+
+@keyframes fly{
+    0%{
+    transform: translateY(0)
+    }
+    25%{
+    transform: translateY(10px);
+    }
+    
+    50%{
+    transform: translateY(-15px);
+    }
+    100%{
+    transform: translateY(0px);
+    }
+}
+
+.top{
+    border: 5px solid #195272;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -5px;
+    border-radius: 50%;
+    background: rgba( 255, 255, 255, 0.5 );
+}
+.line{
+    height: 15px;
+    width: 10px;
+    position: absolute;
+    background: #195272;
+    top: 10px;
+}
+
+.face{
+    border: 5px solid #195272;
+    height: 14vh;
+    width: 8vw;
+    border-radius: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.5 );
+    transition: 1s;
+}
+
+.iner-face{
+    margin-top: 20%;
+    border-radius: 30%;
+    border: 5px solid #195272;
+    background: #60a9b4;
+    height: 7vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box1{
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* background: #000; */
+
+}
+
+.eye-box .eye{
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    /* background: #fff; */
+    /* margin: 0 20px; */
+    border-radius: 50%;
+}
+
+.box1 .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translate(-50%,-50%);
+    width: 45%;
+    height: 45%;
+    background: #195272;
+    border-radius: 50%;
+    border: 3px solid #195272;
+    box-sizing: border-box;
+}
+
+.eare-left{
+    border: 5px solid #195272;
+    height: 5vh;
+    width: 3vh;
+    /* background: #000; */
+    position: absolute;
+    left: 0;
+    border-radius: 10rem 0 0 10rem   ;
+    background: rgba( 255, 255, 255, 0.5 );
+}
+
+.eare-right{
+    border: 5px solid #195272;
+    height: 5vh;
+    width: 3vh;
+    /* background: #000; */
+    position: absolute;
+    right: 0;
+    border-radius:0 10rem 10rem  0 ;
+    background: rgba( 255, 255, 255, 0.5 );
+}
+
+.smile{
+    width: 20px;
+    height: 20px;
+    border-radius: 0 0 50% 50%;
+    border: 3px solid #195272;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.nack{
+    position: absolute;
+    width: 70%;
+    height: 15%;
+    background: #000;
+    background: rgba( 255, 255, 255, 0.5 );
+    border-radius: 50% 50% 0 0 ;
+    bottom: 0;
+}
+
+.robot:hover .iner-face{
+    background: rgb(210, 62, 62);
+}
+
+.robot:hover .smile{
+    border-radius:  50% 50% 0 0;
+    border-top: inset;
+    border-bottom: none;
+}

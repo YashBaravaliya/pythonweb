@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="blog">
+
+{{post.Content|safe}}
+
+
+<br><br>
+</div>
+
+
+
+
+{% endblock body %}
+
+
+
+{% block robo-box %}
+
+{% for allchap in Chapter %}
+
+{% if post.Subject == allchap.Subject %}
+<a href="/{{allchap.Subject}}/{{allchap.slug}}">
+<h2>{{allchap.title}}</h2>
+</a>
+
+
+{% endif %}
+
+
+{% endfor %}
+
+
+
+
+{% endblock robo-box %}

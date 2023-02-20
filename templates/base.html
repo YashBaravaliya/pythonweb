@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythoninja</title>
+    <link rel="stylesheet" href="{% static '/css/style.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/about.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/mobileview.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/eye.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/robot.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/tablet.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/prism.css'  %}">
+    <link rel="stylesheet" href="{% static '/css/blog.css'  %}">
+    <script src="{% static '/js/prism.js' %}"></script>
+    {% comment %} <script src="{% static '/js/robot.js'  %}"></script> {% endcomment %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9836804294410389" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+
+            <header>
+                <nav>
+                  <img src="{% static '/img/logo.png'  %}" alt="logo" class="logo">
+                  <ul>
+                    <li><a href="/"><img src="{% static '/img/home.png' %}" alt=""></a></li>
+                        <li><a href="/contactus/"><img src="{% static '/img/contact.png'  %}" alt=""></a></li>
+                        <li><a href="/aboutMe/"><img src="{% static '/img/about.png'  %}" alt=""></a></li>
+                    </ul>
+                    <a href="">
+                      <img src="{% static '/img/settings.png'  %}" alt="error" class="setting">
+                    </a>
+                </nav>
+              </header>
+              
+            <div class="center contect">
+
+              <div class="mobile-nav">
+                <img src="{% static 'img/logo.png' %}" alt="logo" class="logo">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/contactus/">Contact Us</a></li>
+                  <li><a href="/aboutMe/">About Me</a></li>
+                </ul>
+              </div>
+                
+                {% block body %}
+                    
+                {% endblock body %}
+
+            </div>
+
+            
+<div class="right-bar">
+    <div class="img-box eye-box robot">
+      <div class="face">
+        <div class="top"></div>
+        <div class="line"></div>
+        <div class="iner-face">
+          <div class="box1">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          <div class="smile"></div>
+        </div>
+        </div>
+        <div class="eare-left"></div>
+        <div class="eare-right"></div>
+        <div class="nack"></div>
+        <div class="pre-text">
+          
+        </div>
+      </div>
+      
+    <div class="content">
+      <div class="preaview" id="side-pre">
+        {% block robo-box %}{% endblock robo-box %}
+      </div>
+    </div>
+  </div>
+
+        </div>
+    </div>
+
+    <script src="{% static '/js/robot.js'  %}"></script>
+    <script src="{% static '/js/prism.js'  %}"></script>
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9836804294410389"
+     crossorigin="anonymous"></script>
+
+
+</body>
+</html>
