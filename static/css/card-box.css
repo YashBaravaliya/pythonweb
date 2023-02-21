@@ -1,0 +1,114 @@
+
+.card-box {
+    width: 220px;
+    height: 120px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: scroll;
+    color: white;
+    visibility: hidden;
+}
+
+.card-box h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.card-box .cta{
+    margin-left: 10px;
+}
+
+.card-box::-webkit-scrollbar{
+    display: none;
+}
+  
+.card-box:hover {
+width: 220px;
+height: 254px;
+transform: skew(0deg);
+}
+
+.align {
+padding: 1rem;
+display: flex;
+flex-direction: row;
+gap: 5px;
+align-self: flex-start;
+}
+
+.cta {
+    position: relative;
+    margin: 5px;
+    padding: 2px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 22px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+   @media screen and (max-width: 767px){
+    
+    .card-box{
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        visibility: visible;
+    }
+}
