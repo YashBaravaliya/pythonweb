@@ -101,22 +101,7 @@
 
 {% endfor %}
 
-<br><br>
-
-<h1>cheet sheet</h1><br>
-
-{% if cheetS|length < 1  %}
-<br>
-<h2>No Cheet Sheet Available:</h2>
-<p>Your search - {{query}} - did not match any documents.</p>
-<p>Suggestions:
-<ul>
-    <li>Make sure that all words are spelled correctly.</li>
-    <li>Try different keywords.</li>
-    <li>Try more general keywords.</li>
-</ul>
-</p>
-{% endif %}
+<br><br><br>
 
 {% for cheet in cheetS %}
 
