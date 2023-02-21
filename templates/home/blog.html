@@ -49,18 +49,22 @@
 
 {% block robo-box %}
 
-{% for allchap in Chapter %}
-
-{% if post.Subject == allchap.Subject %}
-<a href="/{{allchap.Subject}}/{{allchap.slug}}">
-<h2>{{allchap.title}}</h2>
-</a>
-
-
-{% endif %}
-
-
-{% endfor %}
+<h2 class="robo-heading">{{post.Subject}}</h2>
+    {% for allchap in Chapter %}
+    {% if post.Subject == allchap.Subject %}
+    <div class="link">
+        <a href="/{{allchap.Subject}}/{{allchap.slug}}">
+            <button class="cta">
+            <span>{{allchap.title}}</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
 
 
 

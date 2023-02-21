@@ -1,3 +1,6 @@
+.center{
+    background: linear-gradient(#18171E,#18171E);
+}
 
 .card-box {
     width: 220px;
@@ -22,6 +25,11 @@
 .card-box h2{
     text-align: center;
     margin: 20px;
+}
+
+.robo-heading{
+    margin: 10px;
+    text-align: center;
 }
 
 .card-box .cta{
@@ -75,6 +83,7 @@ align-self: flex-start;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #234567;
+    /* color: aliceblue; */
    }
    
    .cta svg {
