@@ -216,5 +216,24 @@ CKEDITOR_CONFIGS = {
             'embed',  # Used for embedding media (YouTube/Slideshare etc)
             'tableresize',  # Used to allow resizing of columns in tables
         ]),
+
+        'codeSnippet_languages':{
+            "html": "HTML",
+            "css": "CSS",
+            "python":"python",
+            "mathml": "MathML",
+            "js": "JavaScript",
+            "sql": "SQL",
+            "mongodb": "MongoDB",
+            "json": "JSON",
+            "php": "PHP",
+            "plsql": "PL/SQL",
+		    "powerquery": "PowerQuery",
+            "django": "Django/Jinja2",
+		    "jinja2": "Django/Jinja2",
+            "csharp": "C#",
+		    "cs": "C#",
+
+        }
     }
 }
